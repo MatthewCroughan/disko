@@ -108,7 +108,6 @@ let
     # This makes disko work, when canTouchEfiVariables is set to true.
     # Technically these boot entries will no be persisted this way, but
     # in most cases this is OK, because we can rely on the standard location for UEFI executables.
-    install -m600 ${pkgs.OVMF.variables} efivars.fd
   '';
 
   closureInfo = pkgs.closureInfo {
